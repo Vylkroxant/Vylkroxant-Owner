@@ -1,289 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Angel Manuel Guevara Chavarria">
-    <meta name="description" content="Repositorio oficial de documentación técnica de Vylkroxant, plataforma educativa gestionada por el Téc. Angel Manuel Guevara Chavarría.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vylkroxant | Documentación Oficial</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css"> 
+<meta charset="UTF-8">
+<meta name="author" content="Angel Manuel Guevara Chavarria">
+<meta name="description" content="Vylkroxant - Plataforma educativa fundada por Angel Manuel Guevara Chavarria">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="p:domain_verify" content="b30e421c7a7b3d858e7775961a487c40"/>
+<title>Vylkroxant | Angel Manuel Guevara Chavarría</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Person",
+"name": "Angel Manuel Guevara Chavarria",
+"jobTitle": "Fundador y Técnico",
+"worksFor": {
+"@type": "Organization",
+"name": "Vylkroxant"
+},
+"url": "https://vylkroxant.vercel.app",
+"sameAs": [
+"https://www.facebook.com/profile.php?id=61588189195365",
+"https://www.linkedin.com/in/vylkroxant-vt-0b9a093b4/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLyUEKzVeR8aDw50uYc3Yww%3D%3D",
+"https://www.instagram.com/vylkroxant?igsh=MTNleWI4bm9xdGR6eg==",
+"https://www.reddit.com/user/Vylkroxant/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+"https://www.tiktok.com/@vylkroxant?is_from_webapp=1&sender_device=pc",
+"https://www.pinterest.com/vylkroxant/"
+]
+}
+</script>
 </head>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;600&display=swap');
-
-:root {
-    --bg-0: #070A10;
-    --bg-1: #0A0E17;
-    --bg-2: #0E1423;
-    --text: #E7ECF5;
-    --muted: rgba(231,236,245,.72);
-    --gold-1: #b4975a;
-    --gold-2: #d4af37;
-    --border: rgba(180,151,90,.26);
-    --border-strong: rgba(180,151,90,.48);
-    --shadow-1: 0 10px 30px rgba(0,0,0,.55);
-    --shadow-2: 0 22px 70px rgba(0,0,0,.66);
-    --font-display: "Fraunces", ui-serif, Georgia, serif;
-    --font-body: "Inter", ui-sans-serif, system-ui;
-    --font-mono: "Space Mono", monospace;
-    --r-lg: 18px;
-    --t: 220ms cubic-bezier(.2,.8,.2,1);
-    --container: 1120px;
-}
-
-* { box-sizing: border-box; }
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: var(--font-body);
-    color: var(--text);
-    background: 
-        radial-gradient(1000px 700px at 12% 10%, rgba(212,175,55,.10), transparent 55%),
-        radial-gradient(900px 650px at 88% 18%, rgba(128,0,0,.10), transparent 52%),
-        linear-gradient(180deg, var(--bg-2) 0%, var(--bg-1) 45%, var(--bg-0) 100%);
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-    user-select: none;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background: 
-        linear-gradient(transparent 0, rgba(212,175,55,.025) 1px, transparent 2px) 0 0 / 100% 34px,
-        radial-gradient(circle at 1px 1px, rgba(255,255,255,.045) 1px, transparent 1.5px) 0 0 / 18px 18px;
-    opacity: .35;
-    mix-blend-mode: overlay;
-    z-index: 0;
-}
-
-.main-container {
-    position: relative;
-    z-index: 1;
-    width: min(var(--container), calc(100% - 40px));
-    margin: clamp(18px, 4.4vw, 52px) auto;
-}
-
-.main-header {
-    padding: clamp(22px, 3.2vw, 40px);
-    border-radius: var(--r-lg);
-    border: 1px solid var(--border);
-    background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-    box-shadow: var(--shadow-2);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.main-header::before {
-    content: "";
-    position: absolute;
-    inset: 0 0 auto 0;
-    height: 5px;
-    background: linear-gradient(90deg, var(--gold-2), transparent, #800000);
-}
-
-.main-header h1 {
-    margin: 10px 0;
-    font-family: var(--font-display);
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    font-size: clamp(24px, 4vw, 36px);
-}
-
-.main-header h1 span { color: var(--gold-1); }
-.info-creator { font-size: 0.5em !important; opacity: 0.9; }
-
-.grid-acceso {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.access-card {
-    background: rgba(255,255,255,.03);
-    border: 1px solid var(--border);
-    border-radius: var(--r-lg);
-    transition: all var(--t);
-    position: relative;
-}
-
-.access-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--border-strong);
-    background: rgba(255,255,255,.06);
-}
-
-.card-header {
-    padding: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.card-header i { color: var(--gold-1); font-size: 1.5rem; }
-
-.card-body { padding: 25px; }
-
-.btn-neon-blue, .btn-neon-red {
-    width: 100%;
-    padding: 15px;
-    border-radius: 12px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.3s;
-    border: 1px solid rgba(255,255,255,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.btn-neon-blue {
-    background: linear-gradient(180deg, var(--gold-2), var(--gold-1));
-    color: #000;
-}
-
-.btn-neon-red {
-    background: linear-gradient(180deg, #800000, #5a0c0c);
-    color: #fff;
-}
-
-.btn-neon-blue:hover, .btn-neon-red:hover {
-    filter: brightness(1.2);
-    box-shadow: 0 0 20px rgba(180, 151, 90, 0.3);
-}
-
-.main-footer {
-    margin-top: 50px;
-    padding: 40px 0;
-    background: #05080f;
-    border-top: 1px solid var(--border);
-}
-
-.footer-container {
-    width: min(var(--container), calc(100% - 40px));
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.status-indicator {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--gold-1);
-    font-size: 0.8rem;
-}
-
-.dot-blink {
-    width: 10px;
-    height: 10px;
-    background: var(--gold-2);
-    border-radius: 50%;
-    animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(212,175,55, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(212,175,55, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(212,175,55, 0); }
-}
-
-.mini-timeline {
-    border-left: 2px solid var(--gold-1);
-    padding-left: 15px;
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-}
-
-.pulse-icon { animation: pulseIcon 3s infinite; }
-@keyframes pulseIcon {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.1); opacity: 0.8; }
-}    
+:root {--cyan: #00f2fe;--purple: #9d50bb;--bg: #0d0d0d;--text: #e0e0e0;--card-bg: rgba(15, 15, 15, 0.95);}
+#star-canvas {position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;background: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);}
+* {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;-webkit-user-drag: none;box-sizing: border-box;}
+body {background: var(--bg);color: var(--text);font-family: 'Segoe UI', Roboto, sans-serif;display: flex;flex-direction: column;align-items: center;min-height: 100vh;margin: 0;padding: 40px 0;overflow-x: hidden;}
+.main-wrapper {display: flex;flex-direction: column;align-items: center;gap: 20px;width: 95%;max-width: 850px;padding-bottom: 100px;}
+.logo-container {width: 140px;height: 140px;z-index: 100000000000000;position: sticky;top: 20px;animation: floatSpace 4s ease-in-out infinite;filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.3));}
+@keyframes floatSpace {0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }50% { transform: translateY(-15px) scale(1.05) rotate(2deg); }}
+svg { width: 100%; height: 100%; overflow: visible; }
+.cinta {fill: none; stroke-width: 10; stroke-linejoin: round; stroke-linecap: round;stroke-dasharray: 400; animation: flujoInfinito 0s linear infinite;}
+@keyframes flujoInfinito { from { stroke-dashoffset: 800; } to { stroke-dashoffset: 0; } }
+.color-cyan-main { stroke: url(#gradCyanLogo); }
+.color-purple-main { stroke: url(#gradPurpleLogo); }
+.shadow-main { stroke: rgba(0,0,0,0.6); stroke-width: 16; filter: blur(4px); }
+.reveal.active {opacity: 1;transform: translateY(0);}
+.announcement-card {background: var(--card-bg);border: 1px solid rgba(0, 242, 254, 0.2);border-radius: 12px;padding: 25px;box-shadow: 0 0 50px rgba(0, 0, 0, 0.9), inset 0 0 20px rgba(0, 242, 254, 0.05);position: relative;backdrop-filter: blur(15px);width: 100%;}
+.announcement-card::before {content: "Plataforma Oficial | Vylkroxant";position: absolute; top: -12px; left: 20px;background: var(--cyan); color: #000;font-size: 0.65rem; font-weight: bold; padding: 2px 10px; border-radius: 4px;box-shadow: 0 0 10px var(--cyan);}
+h2 {color: var(--cyan); text-transform: uppercase; text-align: center;letter-spacing: 2px; font-size: 1.2rem; margin-bottom: 20px;text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);}
+.message-body { line-height: 1.6; font-size: 0.9rem; color: #bbb; text-align: justify; }
+.highlight { color: var(--cyan); font-weight: bold;}
+.nucleos-grid {display: grid; grid-template-columns: 1fr; gap: 15px; margin: 25px 0;}
+@media (min-width: 650px) { .nucleos-grid { grid-template-columns: 1fr 1fr; } }
+.nucleo-card {background: rgba(255, 255, 255, 0.03);border: 1px solid rgba(157, 80, 187, 0.2);border-radius: 8px; padding: 15px;transition: all 0.3s ease;}
+.nucleo-card:hover {transform: translateY(-5px) scale(1.02);background: rgba(157, 80, 187, 0.1);border-color: var(--cyan);box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);}
+.nucleo-header {color: var(--cyan); font-weight: bold; font-size: 0.85rem; margin-bottom: 8px;border-bottom: 1px solid rgba(0, 242, 254, 0.1); padding-bottom: 5px;}
+.course-list { margin: 0; padding-left: 15px; list-style: none; }
+.course-list li { font-size: 0.8rem; color: #eee; margin-bottom: 4px; position: relative; }
+.course-list li::before { content: "֍"; position: absolute; left: -15px; color: var(--purple); font-weight: bold; animation: pulseArrow 1s infinite;}
+@keyframes pulseArrow { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+.signature {margin-top: 25px; padding-top: 15px; border-top: 1px dashed rgba(255,255,255,0.1);font-family: tahoma; font-size: 0.8rem; text-align: center;}
+@media (max-width: 990px) {.announcement-card p {font-size: 10px;font-family: tahoma;}.course-list li { font-size: 10px;}.nucleo-header {font-size: 10px;}}
+.typewriter-text { font-family: 'Courier New', monospace; color: var(--cyan); font-size: 0.85rem; font-weight: bold; }
+.cursor { display: inline-block; width: 8px; background-color: var(--cyan); animation: blink 0.7s infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+#hidden-natsi-form { display: none; }
+@media (max-width: 990px) {.vylk-flags-section {display: grid !important;grid-template-columns: 2fr 2fr !important;gap: 90px !important;padding: 10px 10px !important;}.vylk-card {position: relative;width: 90px !important;height: 60px !important;border-radius: 12px;overflow: hidden;box-shadow: 0 10px 30px rgba(0,0,0,0.5);transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);margin-top: -2em;}.flag-grid {display: grid;grid-template-columns: 1fr 1.2fr 1fr;width: 100%;height: 100%;}.stripe {height: 100%;display: flex;justify-content: center;align-items: center;}.escudo-png {width: 80%;height: auto;z-index: 2;filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));}.glass-shine {position: absolute;top: 0; left: 0; width: 100%; height: 100%;background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%);z-index: 5;}.flag-wrapper {display: flex;flex-direction: column;align-items: center;gap: 15px;}.flag-name {font-family: 'Space Grotesk', sans-serif;font-size: 6px !important;font-weight: 600;text-transform: uppercase;letter-spacing: 3px;text-shadow: 0 0 10px rgba(0, 242, 254, 0.3);display: inline-block;color: white;background-image: linear-gradient(to right, var(--vylk-cyan) 50%, #ffffff 50%);background-size: 200% 100%;background-position: 100% 0;-webkit-background-clip: text;background-clip: text;transition: background-position 0.5s ease, opacity 0.3s ease, color 0.5s ease;}@supports (-webkit-background-clip: text) {.flag-name {color: transparent;}}.flag-wrapper:hover .flag-name {opacity: 1;background-position: 0% 0%;text-shadow: 0 0 15px var(--vylk-cyan);}}
+.vylk-flags-section {display: flex;justify-content: center;align-items: center;gap: 90px;padding: 10px 10px;flex-wrap: wrap;}
+.vylk-card {position: relative;width: 200px;height: 120px;border-radius: 12px;overflow: hidden;background: #000;box-shadow: 0 10px 30px rgba(0,0,0,0.5);transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);}
+.vylk-card:hover {transform: translateY(-10px) scale(1.02);}
+.energy-border {position: absolute;top: 0; left: 0; width: 100%; height: 100%;fill: none;stroke-width: 6;stroke-dasharray: 800;animation: energyFlowFlags 4s linear infinite;z-index: 10;pointer-events: none;}
+.flag-grid {display: grid;grid-template-columns: 1fr 1.2fr 1fr;width: 100%;height: 100%;}
+.stripe {height: 100%;display: flex;justify-content: center;align-items: center;}
+.escudo-png {width: 80%;height: auto;z-index: 2;filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));}
+.glass-shine {position: absolute;top: 0; left: 0; width: 100%; height: 100%;background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%);z-index: 5;}
+:root {--vylk-cyan: #00f2fe;--vylk-purple: #9d50bb;--gt-blue: #4997d0;}
+.flag-wrapper {display: flex;flex-direction: column;align-items: center;gap: 15px;}
+.flag-name {font-family: 'Space Grotesk', sans-serif;font-size: 0.9rem;font-weight: 600;text-transform: uppercase;letter-spacing: 3px;text-shadow: 0 0 10px rgba(0, 242, 254, 0.3);display: inline-block;color: white;background-image: linear-gradient(to right, var(--vylk-cyan) 50%, #ffffff 50%);background-size: 200% 100%;background-position: 100% 0;-webkit-background-clip: text;background-clip: text;transition: background-position 0.5s ease, opacity 0.3s ease, color 0.5s ease;}
+@supports (-webkit-background-clip: text) {.flag-name {color: transparent;}}
+.flag-wrapper:hover .flag-name {opacity: 1;background-position: 0% 0%;text-shadow: 0 0 15px var(--vylk-cyan);}
 </style>
-<body>
-    <div class="main-container">
-        <header class="main-header">
-            <i class="fas fa-file-shield fa-3x pulse-icon"></i>
-            <h1><span>VYLKROXANT</span></h1>
-            <h1><span class="info-creator">CENTRO DE DOCUMENTACIÓN TÉCNICA</span></h1>
-            <p style="text-align: center; margin-top: 10px;">Infraestructura de Grado Institucional</p>
-        </header>
-
-        <div class="grid-acceso">
-            <section class="access-card highlighted">
-                <div class="card-header">
-                    <i class="fas fa-book"></i>
-                    <h2>Recursos de Autoridad</h2>
-                </div>
-                <div class="card-body" style="text-align: center;">
-                    <p>Acceda a los lineamientos técnicos, manuales de usuario y protocolos de seguridad del ecosistema Vylkroxant.</p>
-                    
-                    <div class="status-box" style="margin-bottom: 20px; justify-content: center;">
-                        <i class="fas fa-check-circle"></i> Repositorio Verificado por Angel Guevara
-                    </div>
-
-                    <a href="Manual_Tecnico_Vylkroxant.pdf" target="_blank" style="text-decoration: none;">
-                        <button class="btn-neon-blue">
-                            <i class="fas fa-file-pdf"></i> DESCARGAR MANUAL TÉCNICO
-                        </button>
-                    </a>
-                </div>
-            </section>
-
-            <section class="access-card">
-                <div class="card-header">
-                    <i class="fas fa-server"></i>
-                    <h2>Estado del Sistema</h2>
-                </div>
-                <div class="card-body">
-                    <div class="mini-timeline">
-                        <div class="timeline-item">
-                            <p><strong>Despliegue:</strong> Vercel - GitHub - Facebook - YouTube - Google</p>
-                            <p><strong>Seguridad:</strong> Escaneabilidad Constante de los Sistemas</p>
-                            <p><strong>Versión:</strong> 21-26 0.1.9</p>
-                        </div>
-                    </div>
-                    <button class="btn-neon-red" onclick="window.location.href='https://vylkroxant.vercel.app'">
-                        <i class="fas fa-external-link-alt"></i> IR A LA APP PRINCIPAL
-                    </button>
-                </div>
-            </section>
-        </div>
-    </div>
-
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-brand-section">
-                <i class="fas fa-shield-virus"></i>
-                <div>
-                    <strong>VYLKROXANT DOCS</strong>
-                    <p>Téc. Angel Manuel Guevara Chavarria</p>
-                    <p>Fundador y Creador Absoluto</p>
-                </div>
-            </div>
-            <div class="footer-status-section">
-                <div class="status-indicator">
-                    <span class="dot-blink"></span>
-                    <span>SERVIDOR DOCUMENTAL ACTIVO</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+<body oncontextmenu="return false;">
+<canvas id="star-canvas"></canvas>
+<div class="main-wrapper">
+<div class="logo-container">
+<svg viewBox="0 0 100 100">
+<defs>
+<linearGradient id="gradCyanLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#00f2fe"/><stop offset="100%" style="stop-color:#4facfe"/>
+</linearGradient>
+<linearGradient id="gradPurpleLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#9d50bb"/><stop offset="100%" style="stop-color:#6e48aa"/>
+</linearGradient>
+</defs>
+<path class="cinta color-cyan-main" d="M25,50 Q25,15 50,15 T75,50" />
+<path class="cinta shadow-main" d="M50,25 Q85,25 85,50 T50,75 T15,50 T50,25" />
+<path class="cinta color-purple-main" d="M50,25 Q85,25 85,50 T50,75 T15,50 T50,25" />
+<path class="cinta color-cyan-main" d="M25,50 Q25,85 50,85 T75,50" />
+</svg>
+</div>
+<section class="vylk-flags-section">
+<div class="flag-wrapper">
+<div class="vylk-card">
+<svg class="energy-border" viewBox="0 0 320 200"><rect x="3" y="3" width="314" height="194" rx="10"/></svg>
+<div class="glass-shine"></div>
+<div class="flag-grid">
+<div class="stripe" style="background-color: var(--gt-blue);"></div>
+<div class="stripe" style="background-color: #ffffff;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Coat_of_arms_of_Guatemala.svg/960px-Coat_of_arms_of_Guatemala.svg.png" alt="Escudo Guatemala" class="escudo-png">
+</div>
+<div class="stripe" style="background-color: var(--gt-blue);"></div>
+</div>
+</div>
+<span class="flag-name">Guatemala</span>
+</div>
+<div class="flag-wrapper">
+<div class="vylk-card">
+<svg class="energy-border" viewBox="0 0 320 200"><rect x="3" y="3" width="314" height="194" rx="10"/></svg>
+<div class="glass-shine"></div>
+<div class="flag-grid">
+<div class="stripe" style="background-color: #006400;"></div>
+<div class="stripe" style="background-color: white;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Mexico_coat_of_arms.png" alt="Escudo Mexico" class="escudo-png">
+</div>
+<div class="stripe" style="background-color: #8B0000;"></div>
+</div>
+</div>
+<span class="flag-name">México</span>
+</div>
+</section>
+<div class="typewriter-text"><span id="header-type"></span><span class="cursor">_</span></div>
+<div class="announcement-card reveal">
+<h2>Plataformas | Vylkroxant</h2>
+<div class="message-body">
+<p style="text-align: center;">Centro Oficial de <span class="highlight">Vylkroxant</span> donde podrás encontrar todas mis <strong>plataformas oficiales</strong>.</p>
+</div>
+<div class="nucleos-grid">
+<div class="nucleo-card reveal">
+<div class="nucleo-header"><i class="fa-solid fa-fingerprint"></i> Vylkroxant | Official</div>
+<ul class="course-list">
+<li><a href="https://vylkroxant.vercel.app/" style="color: white; text-decoration: none;">Valídado por el Fundador y Desarrollador.</a></li>
+</ul>
+</div>
+<div class="nucleo-card reveal">
+<div class="nucleo-header"><i class="fa-solid fa-fingerprint"></i> Vylkroxant | Asistente</div>
+<ul class="course-list">
+<li><a href="https://vylkroxant-asistente.vercel.app/" style="color: white; text-decoration: none;">Valídado por el Fundador y Desarrollador.</a></li>
+</ul>
+</div>
+<div class="nucleo-card reveal">
+<div class="nucleo-header"><i class="fa-solid fa-fingerprint"></i> Vylkroxant | Plataformas</div>
+<ul class="course-list">
+<li><a href="https://vylkroxant-platforms.vercel.app/" style="color: white; text-decoration: none;">Valídado por el Fundador y Desarrollador.</a></li>
+</ul>
+</div>
+<div class="nucleo-card reveal">
+<div class="nucleo-header"><i class="fa-solid fa-fingerprint"></i> Vylkroxant | Carnet</div>
+<ul class="course-list">
+<li><a href="https://cdi-vylkroxant.vercel.app/" style="color: white; text-decoration: none;">Valídado por el Fundador y Desarrollador.</a></li>
+</ul>
+</div>
+<div class="nucleo-card reveal">
+<div class="nucleo-header"><i class="fa-solid fa-fingerprint"></i> Vylkroxant | Calendario</div>
+<ul class="course-list">
+<li><a href="https://calendario-vylkroxant.vercel.app/" style="color: white; text-decoration: none;">Valídado por el Fundador y Desarrollador.</a></li>
+</ul>
+</div>
+<div class="nucleo-card reveal">
+<div class="nucleo-header"><i class="fa-solid fa-fingerprint"></i> Vylkroxant | Registro Público</div>
+<ul class="course-list">
+<li><a href="https://vylkroxant-registro.vercel.app/" style="color: white; text-decoration: none;">Valídado por el Fundador y Desarrollador.</a></li>
+</ul>
+</div>
+<div class="nucleo-card reveal">
+<div class="nucleo-header"><i class="fa-solid fa-fingerprint"></i> Vylkroxant | Registro Gratiuto</div>
+<ul class="course-list">
+<li><a href="https://vylkroxant.github.io/Vylkroxant-Owner/" style="color: white; text-decoration: none;">Aún no esta disponible.</a></li>
+</ul>
+</div>
+<div class="nucleo-card reveal">
+<div class="nucleo-header"><i class="fa-solid fa-fingerprint"></i> Vylkroxant | Registro Privado</div>
+<ul class="course-list">
+<li><a href="https://vylkroxant.github.io/Vylkroxant-Owner/" style="color: white; text-decoration: none;">Aún no esta disponible</a></li>
+</ul>
+</div>
+</div>
+<div class="signature">
+<p>
+<strong>TÉCNICO: Angel Manuel Guevara Chavarría</strong><br>Fundador y Desarrollador de Vylkroxant
+<br><br>&reg; 2021-2026 Vylkroxant | Todos los Derechos Reservados<br>Esta no es una página oficial de Microsoft</p>
+</div>
+</div>
+<script>
+const canvas = document.getElementById('star-canvas');
+const ctx = canvas.getContext('2d');
+let stars = [];
+function initStars() {
+canvas.width = window.innerWidth; 
+canvas.height = window.innerHeight;
+stars = []; 
+for (let i = 0; i < 200; i++) { 
+stars.push({ 
+x: Math.random() * canvas.width, 
+y: Math.random() * canvas.height, 
+size: Math.random() * 2, 
+speed: Math.random() * 0.5 + 0.2 
+}); 
+}
+}
+function animateStars() {
+ctx.clearRect(0, 0, canvas.width, canvas.height); 
+ctx.fillStyle = "white";
+stars.forEach(s => { 
+ctx.beginPath(); 
+ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2); 
+ctx.fill(); 
+s.y += s.speed; 
+if (s.y > canvas.height) s.y = 0; 
+});
+requestAnimationFrame(animateStars);
+}
+initStars(); 
+animateStars();
+window.addEventListener('resize', initStars);
+function runTypewriter(id, text, speed) {
+let i = 0; 
+const el = document.getElementById(id);
+if (!el) return;
+el.textContent = "";
+function type() { 
+if (i < text.length) { 
+el.textContent += text.charAt(i); 
+i++; 
+setTimeout(type, speed); 
+} 
+}
+type();
+}
+function startCountdown() {
+const update = () => {
+};
+}
+const observerOptions = { threshold: 0.1 };
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => { 
+if (entry.isIntersecting) {
+entry.target.classList.add("active"); 
+}
+});
+}, observerOptions);
+function refreshObservers() {
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+}    
+window.onload = () => { 
+runTypewriter('header-type', "Vylkroxant", 100); 
+startCountdown();
+refreshObservers();        
+setTimeout(() => {
+document.querySelectorAll(".reveal").forEach(el => {
+const rect = el.getBoundingClientRect();
+if (rect.top < window.innerHeight) {
+el.classList.add("active");
+}
+});
+}, 500);
+};
+window.addEventListener('scroll', refreshObservers);
+</script>
+<script>
+(function() {
+document.addEventListener('keydown', function(e) {            
+if (e.keyCode >= 112 && e.keyCode <= 123) {
+e.preventDefault();
+mostrarAlertaVylkroxant("Función del sistema restringida por seguridad.");
+return false;
+}
+if (e.ctrlKey && (
+e.keyCode === 82 ||
+e.keyCode === 85 ||
+e.keyCode === 83 ||
+e.keyCode === 80 ||
+(e.shiftKey && (e.keyCode === 73 || e.keyCode === 74))
+)) {
+e.preventDefault();
+mostrarAlertaVylkroxant("Protocolo de Seguridad NATSI: Acción denegada.");
+return false;
+}
+}, false);
+function mostrarAlertaVylkroxant(msj) {
+console.warn("%c[ALERTA SECURITY]: " + msj, "color: yellow; background: red; font-weight: bold;");
+}
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('selectstart', e => e.preventDefault());
+document.addEventListener('dragstart', e => e.preventDefault());
+})();
+</script>
 </body>
 </html>
