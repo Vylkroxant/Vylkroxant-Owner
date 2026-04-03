@@ -16,27 +16,27 @@
 
 ---
 
-Vylkroxant Oficial (vylkroxant.vercel.app): El Núcleo (Core). Actúa como el centro de mando y punto de entrada principal, estableciendo la identidad y la filosofía del proyecto.
+[Vylkroxant Oficial ](vylkroxant.vercel.app): El Núcleo (Core). Actúa como el centro de mando y punto de entrada principal, estableciendo la identidad y la filosofía del proyecto.
 
 ---
 
-Vylkroxant Asistente (vylkroxant-asistente.vercel.app): Interfaz de interacción inteligente diseñada para el soporte directo y la orientación técnica del usuario.
+[Vylkroxant Asistente ](vylkroxant-asistente.vercel.app): Interfaz de interacción inteligente diseñada para el soporte directo y la orientación técnica del usuario.
 
 ---
 
-Vylkroxant Platforms (vylkroxant-platforms.vercel.app): Nodo operativo de recursos múltiples donde reside la carga académica y técnica.
+[Vylkroxant Platforms ](vylkroxant-platforms.vercel.app): Nodo operativo de recursos múltiples donde reside la carga académica y técnica.
 
 ---
 
-Vylkroxant Registro Público (vylkroxant-registro.vercel.app): Módulo de entrada para la captación de datos y expansión de la comunidad estudiantil.
+[Vylkroxant Registro Público](vylkroxant-registro.vercel.app): Módulo de entrada para la captación de datos y expansión de la comunidad estudiantil.
 
 ---
 
-Vylkroxant CDI (cdi-vylkroxant.vercel.app): El corazón de la seguridad. El sistema de Carné Digital de Identificación que otorga una huella digital única a cada estudiante, permitiendo una trazabilidad total.
+[Vylkroxant CDI ](cdi-vylkroxant.vercel.app): El corazón de la seguridad. El sistema de Carné Digital de Identificación que otorga una huella digital única a cada estudiante, permitiendo una trazabilidad total.
 
 ---
 
-Vylkroxant Calendario (calendario-vylkroxant.vercel.app): Sistema de gestión cronológica para la sincronización de actividades y metas académicas.
+[Vylkroxant Calendario ](calendario-vylkroxant.vercel.app): Sistema de gestión cronológica para la sincronización de actividades y metas académicas.
 
 ---
 
